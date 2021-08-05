@@ -40,11 +40,13 @@ echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.profile
 ###############################################################
 
 ${CODE_SERVER_HOME}/bin/code-server --install-extension ms-python.python
-${CODE_SERVER_HOME}/bin/code/server --install-extension redhat.java
+${CODE_SERVER_HOME}/bin/code-server --install-extension redhat.java
 
 ###############################################################
 #                        JAVA_HOME                            #
 ###############################################################
 
-echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/" >> /etc/environment
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/
+echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/" >> ~/.bashrc
+echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/" >> ~/.profile
 source /etc/environment
