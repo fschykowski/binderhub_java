@@ -47,6 +47,24 @@ ${CODE_SERVER_HOME}/bin/code-server --install-extension redhat.java
 ###############################################################
 
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/
-echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/" >> ~/.bashrc
-echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/" >> ~/.profile
-source /etc/environment
+echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/" >> ~/.bashrc
+echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/" >> ~/.profile
+
+###############################################################
+#                          Scala                              #
+###############################################################
+export PATH=${PATH}:/usr/local/scala/bin
+echo "export PATH=$PATH:/usr/local/scala/bin" >> ~./bashrc
+echo "export PATH=$PATH:/usr/local/scala/bin" >> ~/.profile
+
+###############################################################
+#                          Spark                              #
+###############################################################
+
+wget https://downloads.apache.org/spark/spark-3.0.3/spark-3.0.3-bin-hadoop2.7.tgz
+tar xvf spark-3.0.3-bin-hadoop2.7.tgz
+mv spark-3.0.3-bin-hadoop2.7 /usr/local/spark
+
+export PATH=${PATH}:/usr/local/spark/bin
+echo "export PATH=${PATH}:/usr/local/spark/bin" >> ~/.bashr
+echo "export PATH=${PATH}:/usr/local/spark/bin" >> ~/.profile
