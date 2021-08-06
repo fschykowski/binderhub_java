@@ -41,6 +41,7 @@ echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.profile
 
 ${CODE_SERVER_HOME}/bin/code-server --install-extension ms-python.python
 ${CODE_SERVER_HOME}/bin/code-server --install-extension redhat.java
+${CODE_SERVER_HOME}/bin/code-server --install-extension scala-lang.scala
 
 ###############################################################
 #                        JAVA_HOME                            #
@@ -65,6 +66,6 @@ wget https://downloads.apache.org/spark/spark-3.0.3/spark-3.0.3-bin-hadoop2.7.tg
 tar xvf spark-3.0.3-bin-hadoop2.7.tgz
 mv spark-3.0.3-bin-hadoop2.7 /usr/local/spark
 
-export PATH=${PATH}:/usr/local/spark/bin
-echo "export PATH=${PATH}:/usr/local/spark/bin" >> ~/.bashr
-echo "export PATH=${PATH}:/usr/local/spark/bin" >> ~/.profile
+export PATH=${PATH}:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin
+echo "export PATH=${PATH}:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin" >> ~/.bashr
+echo "export PATH=${PATH}:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin" >> ~/.profile
