@@ -1,4 +1,4 @@
-jupyter_server==1.10.2
+jupyter_server==1.4.1
 # jupyter/jupyterlab extensions
 jupyter-server-proxy
 
@@ -6,4 +6,3 @@ jupyter-server-proxy
 numpy
 jupyter-vscode-proxy
 
-nbconvert
