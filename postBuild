@@ -44,6 +44,14 @@ ${CODE_SERVER_HOME}/bin/code-server --install-extension redhat.java
 ${CODE_SERVER_HOME}/bin/code-server --install-extension scala-lang.scala
 
 ###############################################################
+#                          Spark                              #
+###############################################################
+
+export PATH=$PATH:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin
+echo "export PATH=$PATH:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin" >> ~/.bashr
+echo "export PATH=$PATH:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin" >> ~/.profile
+
+###############################################################
 #                        JAVA_HOME                            #
 ###############################################################
 
@@ -58,10 +66,3 @@ export PATH=${PATH}:/usr/local/scala/bin
 echo "export PATH=$PATH:/usr/local/scala/bin" >> ~./bashrc
 echo "export PATH=$PATH:/usr/local/scala/bin" >> ~/.profile
 
-###############################################################
-#                          Spark                              #
-###############################################################
-
-export SPARK_HOME=/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin
-echo "export SPARK_HOME=/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin" >> ~/.bashr
-echo "export SPARK_HOME=/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin" >> ~/.profile
