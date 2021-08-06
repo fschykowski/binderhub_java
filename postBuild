@@ -54,9 +54,9 @@ echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/" >> ~/.profile
 ###############################################################
 #                          Scala                              #
 ###############################################################
-# export PATH=${PATH}:/usr/local/scala/bin
-# echo "export PATH=$PATH:/usr/local/scala/bin" >> ~./bashrc
-# echo "export PATH=$PATH:/usr/local/scala/bin" >> ~/.profile
+export PATH=${PATH}:/usr/local/scala/bin
+echo "export PATH=$PATH:/usr/local/scala/bin" >> ~./bashrc
+echo "export PATH=$PATH:/usr/local/scala/bin" >> ~/.profile
 
 ###############################################################
 #                          Spark                              #
