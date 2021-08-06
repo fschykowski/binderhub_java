@@ -5,3 +5,5 @@ jupyter-server-proxy
 #vscode
 numpy
 jupyter-vscode-proxy
+
+nbconvert
