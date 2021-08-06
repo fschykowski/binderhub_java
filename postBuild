@@ -62,6 +62,6 @@ echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/" >> ~/.profile
 #                          Spark                              #
 ###############################################################
 
-export PATH=${PATH}:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin
-echo "export PATH=${PATH}:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin" >> ~/.bashr
-echo "export PATH=${PATH}:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin" >> ~/.profile
+# export PATH=${PATH}:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin
+# echo "export PATH=${PATH}:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin" >> ~/.bashr
+# echo "export PATH=${PATH}:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin" >> ~/.profile
