@@ -47,9 +47,9 @@ ${CODE_SERVER_HOME}/bin/code-server --install-extension scala-lang.scala
 #                        JAVA_HOME                            #
 ###############################################################
 
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/
-echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/" >> ~/.bashrc
-echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/" >> ~/.profile
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/" >> ~/.bashrc
+echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/" >> ~/.profile
 
 ###############################################################
 #                          Scala                              #
@@ -61,10 +61,6 @@ echo "export PATH=$PATH:/usr/local/scala/bin" >> ~/.profile
 ###############################################################
 #                          Spark                              #
 ###############################################################
-
-wget https://downloads.apache.org/spark/spark-3.0.3/spark-3.0.3-bin-hadoop2.7.tgz
-tar xvf spark-3.0.3-bin-hadoop2.7.tgz
-mv spark-3.0.3-bin-hadoop2.7 /usr/local/spark
 
 export PATH=${PATH}:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin
 echo "export PATH=${PATH}:/home/jovyan/spark-3.0.3-bin-hadoop2.7/bin" >> ~/.bashr
